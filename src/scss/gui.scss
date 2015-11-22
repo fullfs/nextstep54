@@ -1,0 +1,27 @@
+@mixin button-red {
+    min-width: 360px;
+    height: 72px;
+    outline: none;
+    border: none;
+    text-align: center;
+    color: #ffffff;
+    font: 24px/72px 'GothamProLight';
+    border-bottom: 5px solid #681616;
+    border-radius: 7px;
+    display: block;
+    background: #c42929;
+    margin: 0 auto;
+    padding: 0 30px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    position: relative;
+    transition: 0.5s;
+    cursor: pointer;
+
+    &:hover {
+	    background: #ffffff;
+	    border-bottom-color: #999999;
+	    border-top-color: #aaacaf;
+	    color: #ec1b42;
+	}
+}

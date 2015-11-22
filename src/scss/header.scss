@@ -1,0 +1,61 @@
+.header {
+    position: fixed;
+    width: 100%;
+    left: 0px;
+    top: 70px;
+    transition: 0.5s;
+    z-index: 20;
+}
+
+	.header__bar {
+	    background: rgba(16,18,18,0.75);
+	}
+
+
+		.header__bar-inner {
+	    	height: 100px;
+		    width: 960px;
+		    padding: 0 20px;
+		    margin: 0 auto;
+		    @include cf;
+		}
+
+
+			.header__logo {
+				float: left;
+				width: 320px;
+				height: 100%;
+				@include middler;
+
+				img {
+					padding-bottom: 3px;
+				}
+			}
+
+			.header__menu {
+				float: left;
+				width: 460px;
+			}
+
+
+			.header__extra {
+				float: left;
+				width: 180px;
+				height: 100%;
+			}
+
+				.header__vk-share {
+					border: 1px solid #ae2626;
+				    border-radius: 7px;
+				    width: 176px;
+				    height: 42px;
+				    background: #1B1E1F;
+				    transition: 0.5s;
+				    display: inline-block;
+				    vertical-align: middle;
+				    margin-top: 28px;
+
+					&:hover {
+						background: #b83729;
+					}
+				}

@@ -1,0 +1,49 @@
+@mixin cf() {
+	&:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+}
+
+
+@mixin opacity($value: 0) {
+	opacity: $value;
+}
+
+
+@mixin content-indent() {
+	width: 780px;
+	margin: 0 auto;
+	padding-left: 180px;
+}
+
+
+@mixin no-appear {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+}
+
+
+@mixin link-orange($color: #e67629) {
+	color: $color;
+	text-decoration: none;
+	border-bottom: 1px solid $color;
+	
+	&:hover {
+		border-color: transparent;
+	}
+}
+
+
+@mixin middler() {
+	&:after {
+		content: '';
+		display: inline-block;
+		vertical-align: middle;
+		height: 100%;
+	}
+}

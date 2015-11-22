@@ -1,0 +1,4 @@
+dist/css/*
+dist/*.html
+node_modules
+psd

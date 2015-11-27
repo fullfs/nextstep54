@@ -11,7 +11,18 @@ html
 		include ./includes/header.jade
 		.page
 			.content
-				| sdfsdf
-				button.button-red Узнать о квестах
+				section.pick-date
+					.pick-date__inner
+						ul.pick-date__list
+							li.pick-date__item(data-id="1" data-date="2015-12-13")
+								span.pick-date__item-day 29
+								span.pick-date__item-month ноября
+								span.pick-date__item-available свободно <br>10 игр
+							
+							li.pick-date__item(data-id="1" data-date="2015-12-13")
+								span.pick-date__item-day 30
+								span.pick-date__item-month ноября
+								span.pick-date__item-available свободно <br>10 игр
+
 
 		include ./includes/footer.jade

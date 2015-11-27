@@ -1,18 +1,11 @@
-@import "base";
+@import "fonts";
+@import "gui";
 @import "mixins";
 @import "gradient";
-@import "gui";
+@import "base";
 
-
-
-body {
-	background: #000 url('../images/bg-main.jpg') no-repeat top center;
-	background-size: 100%;
-	background-attachment: fixed;
-	color: #fff;
-	margin: 0;
-}
 
 @import "header";
 @import "page";
 @import "content";
+@import "pick-date";

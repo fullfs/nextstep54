@@ -12,4 +12,13 @@ $(function() {
 
 	$(window).scroll(setHeaderIndent);
 	setHeaderIndent();
+
+
+
+
+
+	$('.pick-date__item').click(function() {
+		$('.pick-date__item').removeClass('_active');
+		$(this).addClass('_active');
+	})
 });

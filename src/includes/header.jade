@@ -1,12 +1,35 @@
 .header
-	header.header__bar
-		.header__bar-inner
-			.header__logo
-				img(width="309" height="49" src="images/logo.png" alt="")
+    header.header__bar
+        .header__bar-inner
+            .header__logo
+                a(href="#")
+                    img(width="309" height="49" src="img/logo.png" alt="")
 
-			nav.header__menu
-				| fsdfsdfsd
+            nav.header__menu
+                ul.header__menu-list
+                    li.header__menu-item._quests
+                        a.header__menu-link(href="#")
+                            | Квесты
 
-			.header__extra
-				.header__vk-share
-					| Поделиться
+                    li.header__menu-item._rules
+                        a.header__menu-link(href="#")
+                            | Правила игры
+
+                    li.header__menu-item._reservation
+                        a.header__menu-link(href="#")
+                            | Бронирование
+
+                    li.header__menu-item._contacts
+                        a.header__menu-link(href="#")
+                            | Контакты
+
+            .header__extra
+                button.header__vk-share(type="button")
+                    span.header__vk-share-txt Поделиться
+
+
+
+            .header__join
+                span.header__join-text Присоединяйся <br>к нам:
+                a.header__join-link._vk(href="#")
+                a.header__join-link._instagramm(href="#")

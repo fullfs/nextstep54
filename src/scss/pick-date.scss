@@ -1,17 +1,23 @@
 .pick-date {
-
+    width: 800px;
+    margin: 0 auto 110px auto;
 }
 
     .pick-date__inner {
-
+        height: 316px;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
     }
 
         .pick-date__list {
-
+            @include cf;
+            font-size: 0px;
         }
 
             .pick-date__item {
-                float: left;
+                display: inline-block;
+                vertical-align: top;
                 width: 125px;
                 height: 150px;
                 margin: 4px;
@@ -56,3 +62,25 @@
                     display: block;
                 }
 
+
+    .pick-date__controls {
+        position: relative;
+        z-index: 2;
+    }
+
+        .pick-date__controls-prev,
+        .pick-date__controls-next {
+            position: absolute;
+            top: 108px;
+            width: 60px;
+            height: 104px;
+        }
+
+        .pick-date__controls-prev {
+            background: url('../img/quest_arrow_prev.png');
+            left: -79px;
+        }
+        .pick-date__controls-next {
+            background: url('../img/quest_arrow_next.png');
+            right: -79px;
+        }

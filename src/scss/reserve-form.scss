@@ -1,0 +1,81 @@
+.reserve-form {
+
+}
+    
+    .reserve-form__time {
+        // display: none;
+        margin: 0 auto 50px auto;
+        border: 1px solid #ff0000;
+
+
+        color: #ffffff;
+        background: rgba(0,0,0,.8);
+        border-radius: 10px;
+        text-align: center;
+        width: 300px;
+
+
+        .frame {
+            border-top: 1px solid #ff0000;
+            @include cf;
+
+            &:first-child {
+                border-top: none;
+            }
+
+            input {
+                display: none;
+            }
+
+            label {
+                float: left;
+                font-weight: bold;
+                cursor: pointer;
+                position: relative;
+                margin: 10px;
+                border: 1px solid #369;
+                transition: all 0.3s ease-in-out;
+                font-size: 12pt;
+                color: #fff;
+                border-radius: 100%;
+                width: 20px;
+                height: 20px;
+                background: #fff;
+                margin-left: 55px;
+            }
+
+            p {
+                float: left;
+                margin: 11px 0 9px;
+                font: 20px 'GothamProBlack';
+                line-height: 20px;
+            }
+        }
+    }
+
+    .reserve-form__input-h {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+        .reserve-form__input {
+            text-align: center;
+            box-sizing: border-box;
+            background: rgba(0,0,0,0.5);
+            border: 1px solid #ffffff;
+            border-radius: 10px;
+            width: 475px;
+            height: 50px;
+            line-height: 48px;
+            color: #ffffff;
+            text-align: center;
+            outline: none;
+            cursor: pointer;
+            font-family: 'GothamProLight';
+            font-size: 23px;
+        }
+
+    .reserve-form__submit {
+        @include button-red;
+        margin: 20px auto;
+    }

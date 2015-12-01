@@ -1,0 +1,30 @@
+.reserve-titles {
+    color: #ffffff;
+}
+
+    .reserve-titles__pre {
+        font: 30px 'GothamProBlack';
+        line-height: 35px;
+        text-shadow: 2px 2px 5px rgba(0,0,0, 0.8);
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    .reserve-titles__name {
+        font: 61px 'Revue_Cyrillic';
+        line-height: 65px;
+        text-shadow: 2px 2px 8px rgba(0,0,0, 0.8);
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 70px;
+    }
+
+    .reserve-titles__hint {
+        text-align: center;
+        font: 18px 'GothamProBlack';
+        line-height: 22px;
+        text-shadow: 2px 2px 3px rgba(0,0,0, 0.8);
+        text-transform: uppercase;
+        margin-bottom: 70px;
+    }

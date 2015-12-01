@@ -3,26 +3,52 @@ doctype html
 <!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!-->
 html 
-	<!--<![endif]-->
-	head
-		include ./includes/head.jade
+    <!--<![endif]-->
+    head
+        include ./includes/head.jade
 
-	body
-		include ./includes/header.jade
-		.page
-			.content
-				section.pick-date
-					.pick-date__inner
-						ul.pick-date__list
-							li.pick-date__item(data-id="1" data-date="2015-12-13")
-								span.pick-date__item-day 29
-								span.pick-date__item-month ноября
-								span.pick-date__item-available свободно <br>10 игр
-							
-							li.pick-date__item(data-id="1" data-date="2015-12-13")
-								span.pick-date__item-day 30
-								span.pick-date__item-month ноября
-								span.pick-date__item-available свободно <br>10 игр
+    body
+        include ./includes/header.jade
+        .page
+            .content
+
+                section.reserve-titles
+                    h2.reserve-titles__pre Выберите квест
+                    h1.reserve-titles__name Розовая пантера
+                    h3.reserve-titles__hint Выберите день, в который хотели бы забронировать игру!
 
 
-		include ./includes/footer.jade
+                section.pick-date
+                    .pick-date__controls
+                        button.pick-date__controls-prev(type="button")
+                        button.pick-date__controls-next(type="button")
+
+                    .pick-date__inner
+                        ul.pick-date__list
+                            li.pick-date__item(data-id="1" data-date="2015-12-13")
+                                span.pick-date__item-day 29
+                                span.pick-date__item-month ноября
+                                span.pick-date__item-available свободно <br>10 игр
+                            
+                            li.pick-date__item(data-id="1" data-date="2015-12-13")
+                                span.pick-date__item-day 30
+                                span.pick-date__item-month ноября
+                                span.pick-date__item-available свободно <br>10 игр
+
+
+
+
+                section.reserve-form
+                    form.reserve-form__form(action="/")
+                        .reserve-form__time
+                            | <div class="frame"><input id="radio0" name="time_game_on_day" value="10:00 - 11:00" type="radio" class="current_time"><label class="radio" for="radio0"> </label><p>10:00 - 11:00 </p></div><div class="frame"><input id="radio1" name="time_game_on_day" value="11:30 - 12:30" type="radio" class="current_time"><label class="radio" for="radio1"> </label><p>11:30 - 12:30 </p></div><div class="frame"><input id="radio2" name="time_game_on_day" value="13:00 - 14:00" type="radio" class="current_time"><label class="radio" for="radio2"> </label><p>13:00 - 14:00 </p></div><div class="frame"><input id="radio3" name="time_game_on_day" value="14:30 - 15:30" type="radio" class="current_time"><label class="radio" for="radio3"> </label><p>14:30 - 15:30 </p></div><div class="frame"><input id="radio4" name="time_game_on_day" value="16:00 - 17:00" type="radio" class="current_time"><label class="radio" for="radio4"> </label><p>16:00 - 17:00 </p></div><div class="frame"><input id="radio5" name="time_game_on_day" value="17:30 - 18:30" type="radio" class="current_time"><label class="radio" for="radio5"> </label><p>17:30 - 18:30 </p></div><div class="frame"><input id="radio6" name="time_game_on_day" value="19:00 - 20:00" type="radio" class="current_time"><label class="radio" for="radio6"> </label><p>19:00 - 20:00 </p></div><div class="frame"><input id="radio7" name="time_game_on_day" value="20:30 - 21:30" type="radio" class="current_time"><label class="radio" for="radio7"> </label><p>20:30 - 21:30 </p></div><div class="frame"><input id="radio8" name="time_game_on_day" value="22:00 - 23:00" type="radio" class="current_time"><label class="radio" for="radio8"> </label><p>22:00 - 23:00 </p></div>
+                        
+                        .reserve-form__input-h
+                            input.reserve-form__input(type="text" placeholder="ВАШЕ ИМЯ (обязательное поле)")
+                                
+                        .reserve-form__input-h
+                            input.reserve-form__input(type="text" placeholder="ВАШ ТЕЛЕФОН (обязательное поле)")
+
+                        button.reserve-form__submit(type="submit") Забронировать сейчас
+
+        include ./includes/footer.jade

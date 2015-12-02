@@ -13,11 +13,23 @@
         .pick-date__list {
             @include cf;
             font-size: 0px;
-        }
+            position: relative;
 
+            &._ready {
+                white-space: nowrap;
+            }
+        }
+            .pick-date__item-h {
+            }
+
+            .pick-date__item-h,
             .pick-date__item {
                 display: inline-block;
                 vertical-align: top;
+                white-space: normal;
+            }
+
+            .pick-date__item {
                 width: 125px;
                 height: 150px;
                 margin: 4px;
@@ -46,19 +58,19 @@
             }
 
                 .pick-date__item-day {
-                    font: 60px 'GothamProBlack';
+                    @include font(60, 68, 'Black');
                     margin-top: 5px;
                     display: block;
                 }
 
                 .pick-date__item-month {
-                    font: 23px 'GothamProBlack';
+                    @include font(23, 26, 'Black');
                     margin-bottom: 5px;
                     display: block;
                 }
 
                 .pick-date__item-available {
-                    font: 15px 'GothamProLight';
+                    @include font(15, 16, 'Light');
                     display: block;
                 }
 

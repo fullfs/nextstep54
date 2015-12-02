@@ -1,0 +1,36 @@
+.select2-drop-active {
+    border: 0;
+    border-radius: 10px;
+    margin-top: 4px;
+}
+
+.select2-drop.select2-drop-above.select2-drop-active {
+    margin-top: 0px;
+    margin-bottom: 4px;
+}
+
+
+.select2-results {
+    max-height: 200px;
+    padding: 0 20px;
+    margin: 0;
+    color: #333333;
+
+    li + li {
+        border-top: 1px solid #cccccc;
+    }
+}
+
+.select2-results .select2-result-label {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    line-height: 40px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.select2-results .select2-highlighted {
+    background: transparent;
+    color: #c42929;
+}

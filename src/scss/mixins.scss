@@ -47,3 +47,10 @@
 		height: 100%;
 	}
 }
+
+
+@mixin font($size, $height, $family) {
+	font-family: 'GothamPro' + $family;
+	font-size: $size + px;
+	line-height: $height + px;
+}

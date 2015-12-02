@@ -3,8 +3,7 @@
 }
 
     .reserve-titles__pre {
-        font: 30px 'GothamProBlack';
-        line-height: 35px;
+        font: 30px/35px 'GothamProBlack';
         text-shadow: 2px 2px 5px rgba(0,0,0, 0.8);
         text-transform: uppercase;
         text-align: center;
@@ -12,8 +11,7 @@
     }
 
     .reserve-titles__name {
-        font: 61px 'Revue_Cyrillic';
-        line-height: 65px;
+        font: 61px/65px 'Revue_Cyrillic';
         text-shadow: 2px 2px 8px rgba(0,0,0, 0.8);
         text-transform: uppercase;
         text-align: center;
@@ -22,8 +20,7 @@
 
     .reserve-titles__hint {
         text-align: center;
-        font: 18px 'GothamProBlack';
-        line-height: 22px;
+        font: 18px/22px 'GothamProBlack';
         text-shadow: 2px 2px 3px rgba(0,0,0, 0.8);
         text-transform: uppercase;
         margin-bottom: 70px;

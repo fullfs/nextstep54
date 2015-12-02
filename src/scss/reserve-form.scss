@@ -3,7 +3,7 @@
 }
     
     .reserve-form__time {
-        // display: none;
+        display: none;
         margin: 0 auto 50px auto;
         border: 1px solid #ff0000;
 
@@ -13,47 +13,69 @@
         border-radius: 10px;
         text-align: center;
         width: 300px;
+    }
 
 
-        .frame {
+        .reserve-form__time-item {
             border-top: 1px solid #ff0000;
             @include cf;
 
             &:first-child {
                 border-top: none;
             }
+        }
 
-            input {
-                display: none;
-            }
-
-            label {
-                float: left;
-                font-weight: bold;
+            .reserve-form__time-label {
+                display: block;
                 cursor: pointer;
                 position: relative;
-                margin: 10px;
-                border: 1px solid #369;
-                transition: all 0.3s ease-in-out;
-                font-size: 12pt;
-                color: #fff;
                 border-radius: 100%;
-                width: 20px;
-                height: 20px;
-                background: #fff;
-                margin-left: 55px;
+                height: 42px;
+                line-height: 40px;
+                padding-left: 86px;
+                text-align: left;
             }
 
-            p {
-                float: left;
-                margin: 11px 0 9px;
-                font: 20px 'GothamProBlack';
-                line-height: 20px;
-            }
-        }
-    }
+                .reserve-form__time-input {
+                    display: none;
+                }
 
-    .reserve-form__input-h {
+                .reserve-form__time-text {
+                    @include font(20, 20, 'Black');
+                    font-weight: bold;
+                    color: #fff;
+                    vertical-align: middle;
+
+                    &:before {
+                        content: '';
+                        width: 20px;
+                        height: 20px;
+                        border: 1px solid #ccc;
+                        border-radius: 100%;
+                        background: #fff;
+                        position: absolute;
+                        left: 55px;
+                        top: 10px;
+                        transition: all 0.2s ease-in-out;
+                    }
+
+                    .reserve-form__time-input:checked + & {
+                        &:before {
+                            box-shadow: inset 0px 0px 9px 6px rgba(#c10000, 0.8);
+                        }
+                    }
+                }
+
+
+
+
+
+
+
+
+
+
+    .reserve-form__box {
         margin-bottom: 10px;
         text-align: center;
     }
@@ -61,21 +83,89 @@
         .reserve-form__input {
             text-align: center;
             box-sizing: border-box;
-            background: rgba(0,0,0,0.5);
+            background: rgba(0,0,0,0.7);
             border: 1px solid #ffffff;
             border-radius: 10px;
             width: 475px;
             height: 50px;
-            line-height: 48px;
+            padding: 0 10px;
             color: #ffffff;
             text-align: center;
             outline: none;
-            cursor: pointer;
-            font-family: 'GothamProLight';
-            font-size: 23px;
+            @include font(23, 48, 'Light');
+        }
+
+        .reserve-form__select,
+        .select2-dropdown-open.select2-drop-above {
+            width: 475px;
+            box-sizing: border-box;
+
+            .select2-choice {
+                box-sizing: border-box;
+                height: 50px;
+                padding: 0 0 0 8px;
+                border: 1px solid #ffffff;
+                @include font(23, 48, 'Light');
+                color: #ffffff;
+                border-radius: 10px;
+                background: rgba(0,0,0,0.7);
+
+                box-shadow: none;
+
+                & > .select2-chosen {
+                    margin-right: 48px;
+                }
+
+                .select2-arrow {
+                    background: #c42929;
+                    width: 42px;
+                    height: 42px;
+                    line-height: 38px;
+                    right: 3px;
+                    top: 3px;
+                    border: none;
+                    border-radius: 7px;
+
+                    b {
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: 17px;
+                        height: 12px;
+                        background: url('../img/select-arrows.png') no-repeat 0px -12px;
+                    }
+                }
+            }
+
+            &.select2-dropdown-open {
+                .select2-choice {
+                    .select2-arrow {
+                        b {
+                            background-position: 0 0px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .reserve-form__textarea {
+            text-align: center;
+            box-sizing: border-box;
+            background: rgba(0,0,0,0.7);
+            border: 1px solid #ffffff;
+            border-radius: 10px;
+            width: 475px;
+            height: 130px;
+            padding: 13px 15px 15px;
+            color: #a9a9a9;
+            outline: none;
+            font-family: Arial, sans-serif;
+            text-align: left;
+            font-size: 16px;
+            line-height: 20px;
         }
 
     .reserve-form__submit {
         @include button-red;
         margin: 20px auto;
+        width: 475px;
     }

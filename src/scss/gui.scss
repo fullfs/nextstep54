@@ -5,7 +5,7 @@
     border: none;
     text-align: center;
     color: #ffffff;
-    font: 24px/72px 'GothamProLight';
+    @include font(24, 72, 'Light');
     border-bottom: 5px solid #681616;
     border-radius: 7px;
     display: block;

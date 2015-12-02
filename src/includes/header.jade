@@ -24,10 +24,14 @@
                             | Контакты
 
             .header__extra
-                button.header__vk-share(type="button")
-                    span.header__vk-share-txt Поделиться
+                .header__vk-share.
+                    <!-- Put this script tag to the place, where the Share button will be -->
+                    <script type="text/javascript"><!--
+                    document.write(VK.Share.button({url: "http://nextstep54.ru/"},{type: "button_nocount", text: "Поделиться"}));
+                    --></script>
+
 
             .header__join
                 span.header__join-text Присоединяйся <br>к нам:
-                a.header__join-link._vk(href="#")
-                a.header__join-link._instagramm(href="#")
+                a.header__join-link._vk(href="https://vk.com/real_questnsk")
+                a.header__join-link._instagramm(href="https://instagram.com/nextstep54.ru")
